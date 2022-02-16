@@ -32,6 +32,7 @@ class FfmpegAT4 < Formula
   depends_on "frei0r"
   depends_on "gnutls"
   depends_on "lame"
+  depends_on "fdk-aac"
   depends_on "libass"
   depends_on "libbluray"
   depends_on "librist"
@@ -73,6 +74,7 @@ class FfmpegAT4 < Formula
   def install
     args = %W[
       --prefix=#{prefix}
+      --enable-libfdk-aac
       --enable-shared
       --enable-pthreads
       --enable-version3
@@ -116,7 +118,6 @@ class FfmpegAT4 < Formula
       --enable-libsoxr
       --enable-libzmq
       --enable-libzimg
-      --enable-libfdk-aac
       --disable-libjack
       --disable-indev=jack
     ]
