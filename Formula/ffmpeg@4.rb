@@ -116,7 +116,7 @@ class FfmpegAT4 < Formula
       --enable-libsoxr
       --enable-libzmq
       --enable-libzimg
-      --enable-libfdk_aac
+      --enable-libfdk-aac
       --disable-libjack
       --disable-indev=jack
     ]
